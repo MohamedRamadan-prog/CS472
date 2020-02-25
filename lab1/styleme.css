@@ -1,0 +1,40 @@
+body{
+    background-color: #2F4F4F;
+    color: navajowhite;
+    font-family: Tahoma;
+}
+
+p:first-child:first-letter {
+    font-size: 1.5em
+}
+  
+h1 {
+    color: #000080;
+}
+h3 {
+    color: #87CEFA;
+}
+span.spanImp{
+    color: yellow;
+    font-weight: bold;
+}
+
+a{
+    color: navy;
+}
+a:visited{
+    color: crimson;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+div.movieStyle{
+    font-family: "Courier New";
+}
+span.moodStyle{
+    font-weight: bold;
+}
