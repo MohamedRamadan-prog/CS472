@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+   <servlet>
+        <servlet-name>Quiz Servlet 2</servlet-name>
+        <servlet-class>mum.cs472.Quiz.HintServlet</servlet-class>
+    </servlet>
+   	 <servlet>
+	    <servlet-name>Quiz Servlet 22</servlet-name>
+	    <servlet-class>mum.cs472.Quiz.QuizServlet2</servlet-class>
+   </servlet>
+    <servlet-mapping>
+        <servlet-name>SimplestServlet</servlet-name>
+        <url-pattern>/SimplestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BeerSelect</servlet-name>
+        <url-pattern>/BeerSelect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Calculator</servlet-name>
+        <url-pattern>/calc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Quiz</servlet-name>
+        <url-pattern>/quiz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChooseServlet</servlet-name>
+        <url-pattern>/ChooseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSPIntroServlet</servlet-name>
+        <url-pattern>/JSPIntroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Quiz Servlet 2</servlet-name>
+        <url-pattern>/QuizServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Quiz Servlet 22</servlet-name>
+        <url-pattern>/QuizServlet22</url-pattern>
+    </servlet-mapping>
+</web-app>

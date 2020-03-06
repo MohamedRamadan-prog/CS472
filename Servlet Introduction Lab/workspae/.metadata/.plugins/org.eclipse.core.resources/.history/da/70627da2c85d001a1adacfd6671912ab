@@ -1,0 +1,36 @@
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.Iterator" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Collections" %>
+<%@ taglib prefix = "c"  uri = "http://java.sun.com/jsp/jstl/core" %>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	List<String> list = new ArrayList<>();
+	list.add("style1");
+	list.add("style2");
+	list.add("style3");
+
+    request.setAttribute("styles",list);
+    List styles = (List) request.getAttribute("styles");
+    Iterator it = styles.iterator();
+   // while(it.hasNext()) {
+   //     response.getWriter().print("<br>: " + it.next());
+    }
+%>
+
+<h3>List Using for Each JSTL</h3>
+<c:forEach var="style" items="${pageScope.styles}">
+    <c:out value="${style}"/>
+</c:forEach>
+
+</body>
+</html>
